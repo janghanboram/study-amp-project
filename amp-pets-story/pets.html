@@ -126,6 +126,7 @@
   </style>
   <!-- amp-story는 커스텀 AMP 컴포넌트라서 해당 AMP 문서에서 미리 필요한 스크립트를 추가해주어야 합니다. -->
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
 </head>
 
 <body>
@@ -175,6 +176,18 @@
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical" class="bottom">
         <p>A bird is three things: Feathers, flight and song, And feathers are the least of these.--Marjorie Allen Seiffert</p>
+      </amp-story-grid-layer>
+    </amp-story-page>
+    <amp-story-page id="page4">
+      <amp-story-grid-layer template="fill">
+        <amp-video src="assets/rabbit.mp4" width="720" height="1280" layout="responsive"
+                    loop autoplay poster="assert/rabbit.jpg"></amp-video>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical">
+        <h1>Rabbits</h1>
+      </amp-story-grid-layer>
+      <amp-story-grid-layer template="vertical" class="bottom">
+        <p>Rabbits can learn to follow simple voice commands and come when called by name, and are curious and playful.</p>
       </amp-story-grid-layer>
     </amp-story-page>
   </amp-story>
