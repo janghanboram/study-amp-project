@@ -139,6 +139,11 @@
     poster-portrait-src="assets/cover.jpg">
     <!-- amp-story 컴포넌트는 최소한 하나 이상의 페이지를 갖고 있어야합니다. -->
     <amp-story-page id="cover">
+      <!-- 페이지안에는 최소한 하나의 레이어(layer)가 들어있어야 합니다. -->
+        <amp-story-grid-layer template="fill">
+          <amp-img src="assets/cover.jpg" width="720" height="1280" layout="responsive">
+          </amp-img>
+        </amp-story-grid-layer>
     </amp-story-page>
   </amp-story>
 </body>
