@@ -6,70 +6,7 @@
   <title>Joy of Pets</title>
   <link rel="canonical" href="pets.html">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <style amp-boilerplate>
-    body {
-      -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
-      animation: -amp-start 8s steps(1, end) 0s 1 normal both
-    }
-
-    @-webkit-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-moz-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-ms-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @-o-keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-
-    @keyframes -amp-start {
-      from {
-        visibility: hidden
-      }
-      to {
-        visibility: visible
-      }
-    }
-  </style>
-  <noscript>
-    <style amp-boilerplate>
-      body {
-        -webkit-animation: none;
-        -moz-animation: none;
-        -ms-animation: none;
-        animation: none
-      }
-    </style>
-  </noscript>
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
   <style amp-custom>
     amp-story {
@@ -127,6 +64,7 @@
   <!-- amp-story는 커스텀 AMP 컴포넌트라서 해당 AMP 문서에서 미리 필요한 스크립트를 추가해주어야 합니다. -->
   <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
   <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>  
 </head>
 
 <body>
@@ -181,7 +119,7 @@
     <amp-story-page id="page4">
       <amp-story-grid-layer template="fill">
         <amp-video src="assets/rabbit.mp4" width="720" height="1280" layout="responsive"
-                    loop autoplay poster="assert/rabbit.jpg"></amp-video>
+                    loop autoplay poster="assets/rabbit.jpg"></amp-video>
       </amp-story-grid-layer>
       <amp-story-grid-layer template="vertical">
         <h1>Rabbits</h1>
