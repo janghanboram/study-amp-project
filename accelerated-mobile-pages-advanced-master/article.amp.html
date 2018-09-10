@@ -52,9 +52,10 @@
         margin: 0.5em;
       }
     </style>
-    <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
-    <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
-    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <!-- <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script> -->
+    <!-- <script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script> -->
+    <!-- <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script> -->
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script type="application/ld+json">
     {
@@ -95,7 +96,7 @@
     <header>
       News Site
     </header>
-    <amp-fit-text width="400" height="75" layout="responsive" max-font-size="42">
+    <!-- <amp-fit-text width="400" height="75" layout="responsive" max-font-size="42">
     Big, bold article quote goes here.
     </amp-fit-text>
     <amp-fit-text width="400" height="75" layout="responsive" max-font-size="42">
@@ -108,8 +109,8 @@
     </amp-fit-text>
     <amp-fit-text width="400" height="400" layout="responsive" max-font-size="42">
       Hello!
-    </amp-fit-text>
-    <amp-twitter width="486" height="657" layout="responsive" data-tweetid="638793490521001985">
+    </amp-fit-text> -->
+    <!-- <amp-twitter width="486" height="657" layout="responsive" data-tweetid="638793490521001985">
     </amp-twitter>
     <amp-youtube data-videoid="npum8JsITQE" layout="responsive" width="480" height="270">
       <div fallback>
@@ -118,13 +119,20 @@
     </amp-youtube>
     <amp-ad width="300" height="250" type="a9" data-aax_size="300x250" data-aax_pubname="test123" data-aax_src="302">
     </amp-ad>
-    <amp-img src="mountains.jpg" layout="responsive" width="266" height="150"></amp-img>
+    <amp-img src="mountains.jpg" layout="responsive" width="266" height="150"></amp-img> -->
     <article>
       <h1>Article Name</h1>
-
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula accumsan eu.</p>
-
-      
     </article>
+    <amp-carousel layout="fixed-height" height="168" type="carousel">
+      <amp-img src="mountains-1.jpg" width="300" height="168"></amp-img>
+      <amp-img src="mountains-2.jpg" width="300" height="168"></amp-img>
+      <amp-img src="mountains-3.jpg" width="300" height="168"></amp-img>
+    </amp-carousel>
+    <amp-carousel layout="responsive" width="300" height="168" type="slides" autoplay delay="2000" loop>
+      <amp-img src="mountains-1.jpg" width="300" height="168"></amp-img>
+      <amp-img src="mountains-2.jpg" width="300" height="168"></amp-img>
+      <amp-img src="mountains-3.jpg" width="300" height="168"></amp-img>
+    </amp-carousel>
   </body>
 </html>
